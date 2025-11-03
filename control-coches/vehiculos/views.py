@@ -17,3 +17,6 @@ def error_404(request, exception=None):
 def error_500(request, exception=None):
     return render(request, 'errores/500.html', None, None, 500)
 
+def index(request):
+    return render(request, "vehiculos/index.html")
+
