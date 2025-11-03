@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4&+w7iol7f=qm9-yoys4=f4$%5p85o*u+6*kir4ys56m6!wcy2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #cambiar a False en produccion antes de entregar
+DEBUG = True #cambiar a False en produccion antes de entregar
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'debug_toolbar',
+    'debug_toolbar',
     'vehiculos', #cambiar por el nombre de app
 ]
 
